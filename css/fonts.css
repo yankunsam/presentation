@@ -1,3 +1,24 @@
+/*标题*/
+@font-face {
+  font-family: 'Open Sans Extrabold';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/open-sans.extrabold.ttf) format('woff2');
+}
+/*正文*/
+@font-face {
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/open-sans.light.ttf) format('woff2');
+}
+/*时间戳*/
+@font-face {
+  font-family: 'Open Sans Italic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/open-sans.italic.ttf) format('woff2');
+}
 /* latin-ext */
 @font-face {
   font-family: 'Cutive Mono';
