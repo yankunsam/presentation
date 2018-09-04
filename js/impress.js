@@ -3227,7 +3227,7 @@
         }, false );
 
         // Delegated handler for clicking on the links to presentation steps
-        gc.addEventListener( document, "click", function( event ) {
+        /*gc.addEventListener( document, "click", function( event ) {
 
             // Event delegation with "bubbling"
             // check if event target (or any of its parents is a link)
@@ -3263,10 +3263,10 @@
                 }
                 throw err;
             }
-        }, false );
+        }, false );*/
 
         // Delegated handler for clicking on step elements
-        gc.addEventListener( document, "click", function( event ) {
+        /*gc.addEventListener( document, "click", function( event ) {
             var target = event.target;
             try {
 
@@ -3292,7 +3292,7 @@
                 }
                 throw err;
             }
-        }, false );
+        }, false );*/
 
         // Add a line to the help popup
         util.triggerEvent( document, "impress:help:add", { command: "Left &amp; Right",

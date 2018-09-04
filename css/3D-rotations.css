@@ -1,9 +1,72 @@
 @import url(fonts.css);
 
+/* Content */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+p {
+    margin: 0.7em 0;
+}
+li {
+    margin: 0.2em;
+}
 
+/* Highlight.js used for coloring pre > code blocks. */
+pre > code {
+    font-size: 14px;
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* Inline code, no Highlight.js */
+code {
+    font-family: "Cutive mono","Courier New", monospace;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0 0.1em;
+    background: rgba(200,200,200,0.2);
+    text-shadow: -1px 1px 2px rgba(100,100,100,0.9);
+    border-radius: 0.2em;
+    border-bottom: 1px solid rgba(100,100,100,0.2);
+    border-left:   1px solid rgba(100,100,100,0.2);
+
+    transition:         0.5s;
+}
+a:hover, a:focus {
+    background: rgba(200,200,200,1);
+    text-shadow: -1px 1px 2px rgba(100,100,100,0.5);
+}
+blockquote {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+}
+em {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+strong {
+    text-shadow: -1px 1px 2px rgba(100,100,100,0.5);
+}
+q {
+    font-family: 'PT Serif';
+    font-style: italic;
+    font-weight: 400;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+strike {
+    opacity: 0.7;
+}
+small {
+    font-size: 0.4em;
+}
 
 /*  Fallback message */
-
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
@@ -16,11 +79,9 @@
     border-radius: 10px;
     background: #EEDC94;
 }
-
 .fallback-message p {
     margin-bottom: 10px;
 }
-
 .impress-supported .fallback-message {
     display: none;
 }
@@ -30,11 +91,9 @@
 body {
     font-family: 'PT Sans', sans-serif;
     min-height: 740px;
-
     background: #00000f;
     color: rgb(102, 102, 102);
 }
-
 .step {
     position: relative;
     width: 700px;
@@ -44,7 +103,7 @@ body {
 
     box-sizing:         border-box;
 
-    line-height: 1.5;
+    line-height: 1.4;
 
     background-color: white;
     border-radius: 10px;
@@ -57,13 +116,11 @@ body {
     letter-spacing: -1px;
 
 }
-
 .notes {
     display: none;
 }
 
 /* Overview step has no background or border */
-
 .overview {
     background-color: transparent;
     border: none;
@@ -84,87 +141,7 @@ body {
     opacity: 0.05;
     transition:         opacity 1s;
 }
-
 .impress-enabled .step.active { opacity: 1 }
-
-
-/* Content */
-
-h1,
-h2,
-h3 {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-    text-align: center;
-}
-
-p {
-    margin: 0.7em;
-}
-
-li {
-    margin: 0.2em;
-}
-
-/* Highlight.js used for coloring pre > code blocks. */
-pre > code {
-    font-size: 14px;
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-}
-
-/* Inline code, no Highlight.js */
-code {
-    font-family: "Cutive mono","Courier New", monospace;
-}
-
-
-a {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 0.1em;
-    background: rgba(200,200,200,0.2);
-    text-shadow: -1px 1px 2px rgba(100,100,100,0.9);
-    border-radius: 0.2em;
-    border-bottom: 1px solid rgba(100,100,100,0.2);
-    border-left:   1px solid rgba(100,100,100,0.2);
-
-    transition:         0.5s;
-}
-a:hover,
-a:focus {
-    background: rgba(200,200,200,1);
-    text-shadow: -1px 1px 2px rgba(100,100,100,0.5);
-}
-
-blockquote {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: 400;
-}
-
-em {
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
-}
-
-strong {
-    text-shadow: -1px 1px 2px rgba(100,100,100,0.5);
-}
-
-q {
-    font-family: 'PT Serif';
-    font-style: italic;
-    font-weight: 400;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
-}
-
-strike {
-    opacity: 0.7;
-}
-
-small {
-    font-size: 0.4em;
-}
-
 
 /*
   This version of impress.js supports plugins, and in particular, a UI toolbar
@@ -195,8 +172,6 @@ body.impress-mouse-timeout div#impress-toolbar {
 body.impress-mouse-timeout {
     cursor: none;
 }
-
-
 
 /* Progress bar */
 .impress-progressbar {
@@ -245,50 +220,55 @@ body.impress-mouse-timeout {
 
 
 /* Styles specific to each step */
-
-#overview2 {
-    font-size: 20pt;
-    padding-left: 200px;
-    text-align: right;
-}
-
-
-/*
-    And as the last thing there is a workaround for quite strange bug.
-    It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
-
-    Sometimes the element positioned in 3D (especially when it's moved back
-    along Z axis) is not clickable, because it falls 'behind' the <body>
-    element.
-
-    To prevent this, I decided to make <body> non clickable by setting
-    pointer-events property to `none` value.
-    Value if this property is inherited, so to make everything else clickable
-    I bring it back on the #impress element.
-
-    If you want to know more about `pointer-events` here are some docs:
-    https://developer.mozilla.org/en/CSS/pointer-events
-
-    There is one very important thing to notice about this workaround - it makes
-    everything 'unclickable' except what's in #impress element.
-
-    So use it wisely ... or don't use at all.
-*/
 .impress-enabled                          { pointer-events: none }
 .impress-enabled #impress                 { pointer-events: auto }
 .impress-enabled #impress-toolbar         { pointer-events: auto }
 .impress-enabled #impress-console-button  { pointer-events: auto }
 
+#overview h1,#overview p{
+    margin: 0;
+    text-align: center;
+}
+#overview  .producer{
+    font-size: 28px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#overview2 {
+    margin-left: 130px;
+    font-size: 20pt;
+    padding-left: 200px;
+    text-align: left;
+}
+#overview2 img{
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    left: -220px;
+    top: 70px;
+}
+#overview2 p{
+    font-size: 25px;
+    text-indent: 2em;
+}
+#overview2 p span{
+    display: block;
+    text-align: right;
+}
 .logo{
     width: 60px;
     height: 60px;
 }
-/* #step-3{
+#step-3{
     display: block;
     background: url(../images/bg.png) no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 video{
     height: 300px;
     width: 300px;
+}
+ul li {
+    font-size: 12px;
 }
