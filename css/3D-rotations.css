@@ -7,13 +7,16 @@
 }
 h1, h2, h3 {
     margin-bottom: 0.5em;
-    margin-top: 0.5em;
+}
+h1{
+    font-family: "Open Sans Extrabold";
 }
 p {
     margin: 0.7em 0;
 }
 li {
     margin: 0.2em;
+    font-family: "Open Sans Light";
 }
 
 /* Highlight.js used for coloring pre > code blocks. */
@@ -65,6 +68,12 @@ strike {
 small {
     font-size: 0.4em;
 }
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
 
 /*  Fallback message */
 .fallback-message {
@@ -112,7 +121,7 @@ body {
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 
     font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 27pt;
+    font-size: 25pt;
     letter-spacing: -1px;
 
 }
@@ -256,19 +265,26 @@ body.impress-mouse-timeout {
     display: block;
     text-align: right;
 }
-.logo{
-    width: 60px;
-    height: 60px;
+
+#step-3 img{
+    margin-top: 50px;
 }
-#step-3{
+#step-3 p{
+    text-align: right;
+    font-size: 20px;
+    margin-top: 50px;
+    font-family: "Open Sans Italic";
+}
+#step-4 img{
+    border: 5px solid rgb(102,102,102);
+}
+#step-5 img{
+    height: 220px;
+    border: 5px solid rgb(102,102,102);
+}
+#step-6 a{
     display: block;
-    background: url(../images/bg.png) no-repeat;
-    background-size: cover;
-}
-video{
-    height: 300px;
-    width: 300px;
-}
-ul li {
-    font-size: 12px;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
 }
