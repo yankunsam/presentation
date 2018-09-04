@@ -40,7 +40,6 @@
 
                 var ucProp  = prop.charAt( 0 ).toUpperCase() + prop.substr( 1 ),
                     props   = ( prop + " " + prefixes.join( ucProp + " " ) + ucProp ).split( " " );
-
                 memory[ prop ] = null;
                 for ( var i in props ) {
                     if ( style[ props[ i ] ] !== undefined ) {
@@ -109,7 +108,6 @@
         if ( revert ) {
             axes = axes.reverse();
         }
-
         for ( var i = 0; i < axes.length; i++ ) {
             css += " rotate" + axes[ i ].toUpperCase() + "(" + r[ axes[ i ] ] + "deg)";
         }
@@ -298,7 +296,6 @@
                     ),
                     el: el
                 };
-
             if ( !el.id ) {
                 el.id = "step-" + ( idx + 1 );
             }
@@ -476,7 +473,6 @@
                 step = stepsData[ "impress-" + el.id ];
                 duration = event.detail.transitionDuration;
             }
-
             if ( activeStep ) {
                 activeStep.classList.remove( "active" );
                 body.classList.remove( "impress-on-" + activeStep.id );

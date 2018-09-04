@@ -234,6 +234,13 @@ body.impress-mouse-timeout {
 .impress-enabled #impress-toolbar         { pointer-events: auto }
 .impress-enabled #impress-console-button  { pointer-events: auto }
 
+.time-stamp{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
 #overview h1,#overview p{
     margin: 0;
     text-align: center;
@@ -260,6 +267,7 @@ body.impress-mouse-timeout {
 #overview2 p{
     font-size: 25px;
     text-indent: 2em;
+    font-family: HDZB;
 }
 #overview2 p span{
     display: block;
