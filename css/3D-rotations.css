@@ -114,7 +114,7 @@ body {
 
     line-height: 1.4;
 
-    background-color: #5179FF; /*背景*/
+    background-color: #3285ff; /*背景*/
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
 
@@ -284,17 +284,29 @@ body.impress-mouse-timeout {
     font-family: "Open Sans Italic";
 }
 #step-4 img{
-    border: 5px solid rgb(102,102,102);
 }
 #step-5 img{
     height: 220px;
-    border: 5px solid rgb(102,102,102);
 }
 #step-6 a{
     display: block;
     width: 200px;
     text-align: center;
     margin-top: 10px;
+}
+
+#step-9 table{
+    border-color: #fff;
+}
+#step-9 table tr td{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 8px;
+    font-weight: normal;
+}
+#step-9 table tr th,#step-9 table tr .title-size{
+    font-size: 23px;
+    padding: 15px 8px;
 }
 #step-10 {
     background: #fff;
