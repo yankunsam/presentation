@@ -10,6 +10,7 @@ h1, h2, h3 {
 }
 h1{
     font-family: "Open Sans Extrabold";
+    text-align: center;
 }
 p {
     margin: 0.7em 0;
@@ -17,6 +18,7 @@ p {
 li {
     margin: 0.2em;
     font-family: "Open Sans Light";
+    text-align: left;
 }
 
 /* Highlight.js used for coloring pre > code blocks. */
@@ -295,18 +297,26 @@ body.impress-mouse-timeout {
     margin-top: 10px;
 }
 
+#step-8 ul{
+  margin-top: 80px;
+}
 #step-9 table{
     border-color: #fff;
+    display: table;
 }
 #step-9 table tr td{
     font-size: 16px;
     text-align: center;
-    padding: 10px 8px;
+    /* padding: 10px 8px; */
+    width: 100px;
+    height: 50px;
     font-weight: normal;
 }
 #step-9 table tr th,#step-9 table tr .title-size{
-    font-size: 23px;
-    padding: 15px 8px;
+    font-size: 20px;
+    /* padding: 15px 8px; */
+    width: 100px;
+    height: 50px;
 }
 #step-10 {
     background: #fff;
