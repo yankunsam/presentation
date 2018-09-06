@@ -277,6 +277,9 @@ body.impress-mouse-timeout {
     text-align: right;
 }
 
+#step-2 ul li{
+    line-height: 100px;
+}
 #step-3 h1{
     margin-bottom: 5px;
 }
