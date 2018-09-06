@@ -335,13 +335,17 @@ body.impress-mouse-timeout {
     height: 500px;
     border-radius: unset;
 }
-#step-13,#step-14,#step-15,#step-16{
+#step-13,#step-15,#step-16{
     text-align: center;
     line-height: 600px;
 }
-#step-13 img,#step-14 img,#step-15 img,#step-16 img,#step-16 img{
+#step-13 img,#step-15 img,#step-16 img,#step-16 img{
     display: inline-block;
     vertical-align: middle;
+}
+#step-14 img{
+    width: 430px;
+    margin: 0 auto;
 }
 #step-17 h1{
     font-size: 60px;
