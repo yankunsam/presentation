@@ -329,17 +329,20 @@ body.impress-mouse-timeout {
 #step-13 {
     background: #fff;
     color: rgb(102,102,102);
+    display: flex;
+    justify-content: space-between;
 }
 #step-13 img{
-    width: auto;
+    width: 270px;
     height: 500px;
     border-radius: unset;
+    margin-top: 50px;
 }
-#step-13,#step-15,#step-16{
+#step-15,#step-16{
     text-align: center;
     line-height: 600px;
 }
-#step-13 img,#step-15 img,#step-16 img,#step-16 img{
+#step-15 img,#step-16 img,#step-16 img{
     display: inline-block;
     vertical-align: middle;
 }
