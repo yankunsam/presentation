@@ -293,21 +293,21 @@ body.impress-mouse-timeout {
     height: 220px;
 }
 
-/*#step-6 a{
-    display: block;
-    width: 200px;
-    text-align: center;
-    margin-top: 10px;
-}*/
-
-#step-8 ul{
-  margin-top: 80px;
+#step-8 img{
+    margin-top: 50px;
 }
-#step-9 table{
+#step-9 img{
+    margin-top: 80px;
+}
+#step-11 ul{
+  margin-top: 50px;
+}
+
+#step-12 table{
     border-color: #fff;
     display: table;
 }
-#step-9 table tr td{
+#step-12 table tr td{
     font-size: 16px;
     text-align: center;
     /* padding: 10px 8px; */
@@ -315,39 +315,38 @@ body.impress-mouse-timeout {
     height: 50px;
     font-weight: normal;
 }
-#step-9 table tr th,#step-9 table tr .title-size{
+#step-12 table tr th,#step-12 table tr .title-size{
     font-size: 20px;
     /* padding: 15px 8px; */
     width: 100px;
     height: 50px;
 }
-#step-10 {
+#step-13 {
     background: #fff;
     color: rgb(102,102,102);
 }
-#step-10 img{
+#step-13 img{
     width: auto;
     height: 500px;
-    margin: 0 auto;
     border-radius: unset;
 }
-#step-11,#step-12,#step-13{
+#step-13,#step-14,#step-15,#step-16{
     text-align: center;
     line-height: 600px;
 }
-#step-11 img,#step-12 img,#step-13 img,#step-15 img{
+#step-13 img,#step-14 img,#step-15 img,#step-16 img,#step-16 img{
     display: inline-block;
     vertical-align: middle;
 }
-#step-15 h1{
+#step-17 h1{
     font-size: 60px;
     margin-bottom: 15px;
     text-align: center;
 }
-#step-15 img{
+#step-17 img{
     margin-top: 10px;
 }
-#step-16 h1,#step-16 h3{
+#step-18 h1,#step-18 h3{
     text-align: center;
     line-height: 200px;
 }
